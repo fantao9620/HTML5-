@@ -1,0 +1,45 @@
+字体样式:font-family  设置字体类型  font-family:"隶书";
+        font-size    设置字体大小   font-siz:12px;
+        font-style   设置字体风格   font-style:italic;
+        font-weight 设置字体的粗细  font-weight:bold;
+        font      在一个声明中设置所有的字体属性  font:italic bold 36px "宋体";
+ 字体类型:font-family 
+ 字体大小:font-size
+ 字体风格;font-style normal italic斜体
+ 字体的粗细:font-weight normal   默认值
+                       bold   粗体字体
+                       bolder  更粗的字体
+                       lighter  更细的字体
+                       100-900   定义由细到粗的字体  400等同于normal,700等同于bold
+ 字体属性 font  字体风格-字体粗细-字体大小-字体类型
+ 文本样式 color 设置文本颜色   color:#00c;
+          text-align 设置元素的水平对齐方式  text-align:right;
+          text-indent 设置首行文本的缩进   text-indent:20px;
+          line-height 设置文本的的行高 line-height:25px;
+          text-decoration 设置文本的装饰 text-decoration:underline;
+ 文本颜色 十六进制表示颜色  6位颜色值相邻数字两两相同时,可两两缩写为1位
+ 排版文本段落
+ 水平对齐方式:text-align
+ left  把文本排列到左边
+ right 把文本排列到右边
+ center 把文本排列到中间
+ 首行缩进:text-indent: px
+ 行高;line-height: px
+ 文本修饰和垂直对齐
+ 文本修饰:text-decoration属性
+ 垂直对齐方式:vertical-align属性:middle,top,bottom
+ none 默认值,定义的标准文本
+ underline 设置文本的下划线
+ overline 设置文本的上划线
+ line-through 设置文本的删除线
+ blink 设置文本闪烁  此值只在firefox浏览器中有效,在ie中无效
+ 伪类:伪类选择元素基于的是当前元素处于的状态.由于状态是动态变化的,所以一个元素达到一个特定状态时,它可以得到一个伪类的样式;当状态改变时,它又会失去这个样式
+ :hover 伪类将应用于有鼠标指针悬停于其上的元素
+ a:hover{
+ color;#B46210;
+ text-decoration:underline;
+ }
+ 网页背景
+ 背景颜色:background-color
+ 列表颜色;去掉圆点 list-style:none
+ web字体 FONT Awesome http://www.fontaweisome.com.cn/
