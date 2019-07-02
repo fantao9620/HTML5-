@@ -1,0 +1,31 @@
+div:可定义文档中的分区
+标签可以把网页分割为独立的,不同的部分
+有五个属性:width,height,padding,border,margin.
+边框:border-top-color 上边框颜色  border-top-color:#369;
+     border-right-color 右边框颜色  border-right-color:#369;
+     border-bottom-color 下边框颜色   border-bottom-color:#fae45b;
+     border-left-color 左边框颜色   border-left-color:#efcd56;
+边框粗细:border-width: thin medium thick
+边框样式:border-style: none hidden dotted dashed solid double
+border简写:同时设置边框的颜色,粗细和样式 border:9px #F00 dashed;
+外边距:margin  网页居中对齐:margin:0px auto;
+内边距;padding
+盒子模型:盒子模型总尺寸=border-width+padding+margin+内容宽度
+body的margin为8px p标签的上下边距为16px h1标签的上下外边距为21.440px
+ul标签的上下外边距为16px,左内边距为40px
+重置默认样式(css reset) 为了兼容性,凡是浏览默认的样式,都不要使用
+元素分类:行级元素  块级元素 内联块元素
+行级元素:<a> <strong> <em>
+span是一个特殊的行级标签,和div一样,没有任何语义.通常用来着重显示某行文字中的某个单词
+块级元素:<p><div><h1>-<h6><ol><li><ul><li>  <dl>-<dt>-<dd>
+特性:1.默认独占一行显示 2.没有宽度时,默认撑满一排 3.支持所有css命令
+内联块元素-img inline-block的特点:元素在一行显示 支持宽高 没有宽度的时候内容撑开宽度
+display属性:控制元素的显示和隐藏  块级元素与行级元素的转变
+block:块级元素的默认值,元素被显示为块级元素,该元素前后会带有换行符
+inline:内联元素的默认值.元素会被显示为内联元素,该元素前后没有换行符
+inline-block:内联块元素
+none:设置元素不会被显示
+设置背景图像:背景图像:background-image url属性
+背景重复方式:background-repeat属性 repeat:沿水平和垂直两个方向平铺
+no-repeat:不平铺,只显示一次 repeat-x:只沿水平方向平铺 repeat-y:只沿垂直方向平铺
+背景定位:background-position属性
