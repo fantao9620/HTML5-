@@ -1,0 +1,88 @@
+表格:table标签(表格),tr标签(行),td标签(标准单元格),caption标签(标题),th标签(表头单元格)
+为了更深一层对表格进行语义化,HTML引入了thead,tbody和tfoot这三个标签,这三个标签把表格分为三部分:表头,表身,表脚
+单元格合并 colsopan:单元格占用表格列数
+rowspan:单元格所占表格行数
+案例:<table border=“1” bordercolor=“blue”>
+<tr>
+<th>Name</th>
+<th colspan=“2” >Telephone</th>
+</tr>
+<tr>
+<td>Michael Phelps </td>
+<td>123456</td>
+<td>653321</td>
+</tr>
+</table>
+表格样式美化:给表格添加边框,设置字体颜色,以及给单元格设置一些padding
+<table>
+<caption>Table 1:Current Incventory </caption>
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tfoot>
+</table>
+表单:表单就是收集用户信息的,就是让用户填写的,选择的
+form是表单的意思,form中间可以添加文本框,密码框,单选按钮,复选框,下拉列表,按钮,文本域等内容
+用途:与用户交互,收集用户输入信息
+属性:method设置提交表单内容到服务器的HTTP方法,可以选get和post
+name 表单域的名称
+action 设置表单处理程序的URl 例子action="mailto:dain电子邮箱"
+表单标签<input>...</input>类型用type属性指定
+type text 设置单行文本域
+     password 设置密码域
+     file 文件输入域,这时form应设属性method="post" enctype="multipart/form-data"
+     hidden 隐藏域,用于发送几个不用浏览者填写.但是处理程序需要的数据,比如一份调查问卷的期次
+     checkbox 设置复选框
+     radio 设置单选按钮,同名单选按钮只允许选择一个
+     button 一般按钮\
+     image 图像提交按钮,点击后会将表单中的信息提交
+     reset 设置重置按钮,点此按钮将所有表单域的只5恢复为缺省值
+     submit 设置提交按钮,这是每个表单都有的,表示将表单中的信息提交
+     表单标签<input>
+     name 表单域标识,作为"名称/取值对"的一部分传给后台程序
+     value 输入的值
+     checked 设置初始时被选中,无取值
+     size 可视的文本输入字符数
+     maxlength 能输入的最大字符数
+     alt 输入域描述
+     src 图像的URl
+     tabindex tab键次序
+1.文本框 <input type="text" value="默认值"/>
+2.密码框 <input type="password"/>
+3.单选按钮 <input type="radio" name="命名" checked="checked"/>男<input type="radio" name="命名"/>女
+input的type的值如果是radio就是单选按钮.需要注意的是必须要有相同的name属性,单选按钮才能互斥
+label标签:inpoue元素要有一个id,然后label标签就有一个for属性,和id相同,就表示绑定了,这个label和input就有绑定关系了,点击lael标签中的
+文字就可以选择相应的单选框
+4.复选框 <input type="checkbox" name="aihao">睡觉  <input type="checkbox" name="aihao">吃饭
+复选框,最好也是有相同的name(便于服务器端收集用户选中的信息)
+5.下拉列表<select> select就是"选择",select标签和ul,ol,dl一样,都是组标签 option"选项"
+select属性:无取值,表示初始选择项
+6.文本域<texttarea cols="20" rows="10"></textarea>
+cols属性表示columns"列",rows属性表示"行".值就是数字,表示行数和列数.标签对儿中间的文字是默认出现在文本框的文字,一般不需要写字
+7.按钮 普通按钮 button就是英语"按钮"的意思.value的"值"就是按钮上面显示的文字
+       提交按钮  submit就是英语"提交"的意思.这个按钮不需要写value自动就有"提交"文字.这个按钮点击,表单会提交到服务器.
+       重置按钮 reset就是"复位""重置"的意识,可以重置前面各个表单元素中填写的值
+       8.文件上传控件:<input type="file" name="filename">
+       在页面中显示为文件名称框和浏览按钮
+       注意:在form标记中要设置属性 enctype="multipart/form-data" method="post"
+       9.隐藏域控件:<input type="hidden" name="id" value="1"> 在页面中不显示
+       只读:readonly
+       禁用:disabled="disabled"
+     
