@@ -23,6 +23,9 @@
  left  把文本排列到左边
  right 把文本排列到右边
  center 把文本排列到中间
+ vertical-align 垂直居中
+ 实际开发经验:1.内容在块中垂直对齐方式:块的行高line-height和块的高度height设置一样
+ 2.文字和图片对齐,图片和文字在一个块当中,图片就要设置垂直居中对齐{vertical-align:middle;}
  首行缩进:text-indent: px
  行高;line-height: px
  文本修饰和垂直对齐
