@@ -44,7 +44,7 @@ type text 设置单行文本域
 2.密码框 <input type="password"/>
 3.单选按钮 <input type="radio" name="命名" checked="checked"/>男<input type="radio" name="命名"/>女
 input的type的值如果是radio就是单选按钮.需要注意的是必须要有相同的name属性,单选按钮才能互斥
-label标签:inpoue元素要有一个id,然后label标签就有一个for属性,和id相同,就表示绑定了,这个label和input就有绑定关系了,点击lael标签中的
+label标签:input元素要有一个id,然后label标签就有一个for属性,和id相同,就表示绑定了,这个label和input就有绑定关系了,点击lael标签中的
 文字就可以选择相应的单选框
 4.复选框 <input type="checkbox" name="aihao">睡觉  <input type="checkbox" name="aihao">吃饭
 复选框,最好也是有相同的name(便于服务器端收集用户选中的信息)
