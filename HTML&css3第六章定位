@@ -32,3 +32,11 @@ z-index应用
 整绝对定位层的z-index值即可。
 透明度 opacity:x x值为0~1，值越小越透明    opacity:0.4;
 filter:alpha(opacity=x) x值为0~100，值越小越透明   filter:alpha(opacity=40);
+
+relative和absolute两种定位方式是网页制作中经常使用的,经常结合一起用,祖先元素设置relative,后代
+元素设置absolute,祖先元素就作为后代的参照基准
+relative特性:原位置不变
+absolute特性:脱离标准文档流,有层级了,块元素宽度没有设置时是更具内容撑开(之前在标准文档流里面是撑满父级盒子)
+使用z-index属性设置定位元素的堆叠顺序,值越大离用户越近,值越小离用户越远
+使用opacity:x或filter:alpha(opacity=x)方式设定网页元素的透明度
+实际项目中opacity:x和filter:alpha(opacity=x)一起写,支持浏览器兼容性.
