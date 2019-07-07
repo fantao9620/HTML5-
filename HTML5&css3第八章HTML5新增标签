@@ -1,0 +1,210 @@
+结构标签
+<header> 标记定义一个页面或一个区域的头部
+<nav> 标记定义导航链接
+<article> 标记定义一篇文章
+<section> 标记定义一个区域
+<aside> 标记定义页面内容部分的侧边栏
+<footer> 标记定义一个页面或一个区域的底部
+<hgroup> 标记定义文件中一个区块的相关信息
+<figure> 标记定义一组媒体内容以及它们的标题
+<figcaption> 标签定义 figure 元素的标题
+标题组h标签hgroup
+hgroup元素，语义就是组合网页或区段的标题，修改hgroup样式后，被他包
+围的h1、h4之类的标题元素就会同时继承他设置的样式。
+<figure>标签规定独立的流内容（图像、图表、照片、代码等等）
+figure元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生
+影响。
+在html5中有了新标签更能语义化的定义出这中图片列表，那就是figure标
+签。figure用来代替原来li标签，p标签由figcaption标签代替。
+注意：一个figure元素内最多只允许放置一个figcaption元素，其他元素可
+无限放置。
+<figcaption>标签定义figure元素的标题。
+”figcaption
+” 元素应该被置于“figure
+” 元素的第一个或最后一个子元
+素的位置。
+<figure> 标签用于对元素进行组合。使用<figcaption>元素为元素组添加
+标题。全局属性标签
+<contenteditable> 用户编辑内容标签
+<hidden> 隐藏属性标签
+<spellcheck> 拼写语法检查标签
+<contenteditable>
+true 规定可以编辑元素内容。
+false 规定无法编辑元素内容。
+classname 继承父元素的 contenteditable 属性。
+<hidden>
+hidden 属性规定对元素进行隐藏，隐藏的元素不会被显示。
+hidden属性在html5中，只要存在，就是隐藏效果，而不论值为多少。
+要显示元素，要删除hidden属性，而不是设置为false。
+<spellcheck>
+spellcheck 属性可对以下文本进行拼写检查：
+1.类型为 text 的 input 元素中的值（非密码）
+2.textarea 元素中的值
+3.可编辑元素中的值
+true 规定应当对元素的文本进行拼写检查。
+false 规定不应对元素的文本进行拼写检查
+其他标签
+<mark> 有标记文本标签（突出的黄色标记）<mark></mark>
+<video> 元素定义视频，比如电影片段或其他视频流
+<video width="1280" height="720" controls src="video.mp4">
+您的浏览器不支持 video 标签。
+</video>
+<video> 元素定义视频
+需要注意的是，video标签只支持Ogg、MPEG4、WebM这三种视频媒体格式
+但是，video标签对这三种视频格式是有具体要求的
+Ogg = 带有 Theora 视频编码 + Vorbis 音频编码
+MPEG4 = 带有 H.264 视频编码 + AAC 音频编码
+WebM = 带有 VP8 视频编码 + Vorbis 音频编码
+<audio> 元素定义音频，比如音乐或其他音频流
+<audio src=“audio.mp3“ controls>
+您的浏览器不支持 audio 标签。
+</audio>
+<embed> 元素用来插入各种多媒体格式，可以是midi，WAV，aiff，au，
+MP3等
+重新定义的标签
+<b> 代表内联文本，通常是粗体，没有传递表示重要的意思
+<i> 代表内联文本，通常是斜体，没有传递表示重要的意思
+<small> 表示小字体，例如打印注释或者法律条款
+<strong> 表示重要性而不是强调符号
+<dl>
+<dd> 可以同details与figure一同使用，定义包含文本，dialog也可用
+<dt> 可以同details与figure一同使用，汇总细节，dialog也可用
+<hr> 表示主题结束，而不是水平线，虽然显示相同
+<menu> 重新定义用户界面的菜单，配合commond或者menuitem使用
+<iframe> 提高安全性，增加sendbox属性
+新增form元素标签
+datalist 与 input 元素配合使用该元素
+details 用于描述文档或文档某个部分的细节
+summary 用于描述有关文档或文档片段的详细信息
+keygen 定义 keytype。rsa 生成 RSA 密钥。
+output 定义不同类型的输出，比如脚本的输出。
+autocomplete 表示是否使用输入字段的自动完成功能。
+novalidate 生成一个颜色选择表单
+HTML5中为了方便排版和搜索，制定了可以使form中的表单标签脱离form
+的嵌套。
+方法:form指定id，所有表单标签均添加form=id属性。
+注册页面代码如下（注意id与对应form的引用）
+datalist
+<datalist> 标签定义选项列表。请与 input 元素配合使用该元素，来定义
+input可能的值。
+datalist及其选项不会被显示出来，它仅仅是合法的输入值列表。
+请使用 input 元素的 list 属性来绑定 datalist。
+HTML5 中新增的<details>标签允许用户创建一个可展开折叠的元素，让一
+段文字或标题包含一些隐藏的信息。
+<summary> 标签包含 details 元素的标题，"details" 元素用于描述有关
+文档或文档片段的详细信息。
+新增input类型
+Type="search" 产生一个搜索意义的表单 配合results="n"属性 C
+Type="email" 限制用户输入必须为Email类型
+Type="url" 限制用户输入必须为URL类型
+Type="number" 限制用户输入必须为数字类型
+Type=“tel" 限制用户输入必须为电话号码类型
+Type="range" 产生一个滑动条的表单
+Type="color" 生成一个颜色选择表单
+Type=“time" 限制用户输入必须为时间类型
+Type="date" 限制用户输入必须为日期类型
+Type=“month" 限制用户输入必须为月类型
+Type=“week" 限制用户输入必须为周类型
+search
+类型文本是一种input元素，主要用于搜索关键词的文本框类型。
+该类型的文本框和普通的文本框区别就是外观，在safari浏览器和Chrome浏
+览器下，其文本框的外观为圆角文本框。
+email
+email类型的input元素是专门用于输入E-mail的文本输入框，通常用在需要
+输入E-mail地址的输入文本框上。
+url
+用于提供输入url地址这类特殊文本的文本框，当提交表单时，如果所输入
+的内容是url地址格式的文本，则会提交数据到服务器，如果不是，则不允
+许提交。
+number
+适用于输入数值的文本框，还可以限制数字的个数及规定允许的最大值和最
+小值、合法的数字间隔或默认值。如输入的数字不在限定范围内，则会出现
+错误提示。
+max 规定允许的最大值
+min 规定允许的最小值
+step 规定合法的数字间隔（如：step=5，合法数字是5、10、15等）
+value 规定默认值
+tel
+用户输入电话号码的文本框，不限定只输入数字，应为电话还包括其他的字
+符（如:
+“+ ” “ -”
+、
+“
+、
+” ）例如：+86-0411-84832596。
+range
+用于输入包含一定范围内数字值的文本框，在网页中显示为滑动条。还可以
+设定对所接受数字的限制，包括规定允许的最大值和最小值、合法的数字间
+隔或默认值等。如果所输入的数字不在限定范围内，则会出现错误提示。
+max 规定允许的最大值
+min 规定允许的最小值
+step 规定合法的数字间隔（如：step=5，合法数字是5、10、15等）
+value 规定默认值
+range类型的input元素在不同浏览器中的外观也不同，在Opera浏览器中会
+在滑块下方显示出额外的数字间隔短线。range类型和number在属性上是完
+全相同的，不同在于外观表现上，支持range类型的浏览器都会将其显示为
+滑块的形式，而不支持range类型的浏览器则会将其显示为普通的纯文本输
+入框，即以type=“text”来处理
+color
+用于专门设置颜色的文本框，通过单击文本框，可以快速打开拾色器面板，
+方便用户选择一种颜色。
+time
+time类型的日期检出器用于选取时间，具体到小时和分钟，如13时20分，选
+择后会以2015-13的形式显示。
+还可以限定时间，通常用作测试或有时间限制的考试评测系统中。
+以如下为例：单击微调按钮时，会以2为单位递增或递减，也可以使用min或
+max属性指定时间的范围。
+date
+date类型的日期检出器用于选取日、月、年，如2015年5月12日，会以2015-
+05-12。
+Chrome浏览器不支持日期检出器控件，Opera浏览器支持该类型。
+month
+用于选取月、年，即选择一个具体的月份，如2015年5月，选择后会以2015-
+05的形式显示。
+同date类型一样，Chrome浏览器不支持日期检出器，只能微调显示月与年，
+而Opera能显示日期控件，用户可以使用控件来选择具体月份，但不能选择
+具体日期，整个月份的日期会以深灰色显示，单击该区域就可以选择整个月
+份。
+week
+用于选取周和年，如2015年5月第2周，选择后会以2015-W2的形式显示。
+同date类型一样，Chrome浏览器不支持日期检出器，只能微调显示周与年，
+而Opera能显示日期控件，整个月份的日期以深灰色显示，单击该区域可以
+使用控件来的周数，也可以选择年，但不能选择具体日期
+新增表单其他属性
+required required 表单拥有该属性表示其内容不能为空，必填
+placeholder 提示文本 表单的提示信息，存在默认值将不显示
+autofocus autofocus 自动聚焦属性，页面加载完成自动聚焦到指定表单
+pattern 正则表达式 输入的内容必须匹配到指定正则
+required
+用于规定输入框填写的内容不能为空，否则不允许进行表单提交
+它适用于以下input输入类型：text、search、url、telephone 、 email
+、password 、date pickers (date, month, week, time, datetime,
+datetime-local)、number 、checkbox 、radio和file。
+当输入框内容为空时，提示信息为：请填写此字段。只有输入内容后，才允
+许提交表单。
+placeholder
+用于为input类型的输入框提供一种提示（hint）,这些提示可以描述输入框
+期待用户输入何种内容，在输入框为空时显示出现，而当输入框获得焦点时
+则会消失
+适用于<input>标签：text、search、url、telephone、email、password。
+autofocus
+是一个布尔值，可以使页面加载时，表单控件自动获得焦点，这些控件可以
+是文本框、复选框、单选按钮和普通按钮等所有<input>标签的类型。
+在同一页面只能指定一个autofocus属性值，当表单控件比较多时，建议挑
+选最需要聚焦的那个控件来使用这一属性值。
+如下代码：
+“注册”按钮自动获得焦点，通常希望用户直接点击该按钮
+pattern
+用于验证input类型输入框用户输入的内容是否与自定义的正则表达式相匹
+配。
+该属性适用于以下类型<input>标签：text、search、url、telephone、
+email、password。
+novalidate
+用于提交表单时取消整个表单的验证，即关闭对表单内所有元素的有效性检
+查，可设定 “true
+”或”false
+”
+注释：novalidate 属性适用于：<form>，以及以下类型的 <input> 标签：
+text, search, url, telephone, email, password, date pickers, range
+以及 color。
+
