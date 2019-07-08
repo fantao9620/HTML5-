@@ -208,3 +208,17 @@ novalidate
 text, search, url, telephone, email, password, date pickers, range
 以及 color。
 
+HTml5&css3第八章-html5新的标签
+1.了解HTMl5新增表单其他属性
+required autofocus pattern plscehoder
+2.掌握结构标签
+header footer section nav aside article
+3.掌握全局属性标签
+contenteditable  spellcheck hidden
+4.掌握音频视频标签
+<video><audio> 参考API
+5.新增表单元素标签
+datalist  details summary keygen output autocomplete novalidate
+6.新增input类型
+seach email
+
