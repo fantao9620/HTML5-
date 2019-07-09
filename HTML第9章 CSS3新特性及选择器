@@ -41,17 +41,24 @@ E:checked 匹配用户界面上处于选中状态的元素E。(用于input type�
 radio与checkbox时)
 E:enabled 匹配用户界面上处于可用状态的元素E。
 E:disabled 匹配用户界面上处于禁用状态的元素E。
-E:root 匹配E元素在文档的根元素。
+
+元素内部子节点
 E:first-child 匹配父元素的第一个子元素E。
 E:last-child 匹配父元素的最后一个子元素E。
 E:only-child 匹配父元素仅有的一个子元素E。
 E:nth-child(n) 匹配父元素的第n个子元素E。
 E:nth-last-child(n) 匹配父元素的倒数第n个子元素E。
+先找位置,再确定类型
+
+元素自己本身位置
 E:first-of-type 匹配同类型中的第一个同级兄弟元素E。
 E:last-of-type 匹配同类型中的最后一个同级兄弟元素E。
 E:only-of-type 匹配同类型中的唯一的一个同级兄弟元素E。
 E:nth-of-type(n) 匹配同类型中的第n个同级兄弟元素E。
 E:nth-last-of-type(n) 匹配同类型中的倒数第n个同级兄弟元素E。
+先确定类型,在找位置
+
+E:root 匹配E元素在文档的根元素。
 E:empty 匹配没有任何子元素（包括text节点）的元素E。
 掌握属性选择器；
 E[att] 选择具有att属性的E元素。
